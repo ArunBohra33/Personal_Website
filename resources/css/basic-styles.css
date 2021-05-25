@@ -1,0 +1,206 @@
+/*-------------------------------*/
+/* BASIC SETUP */
+/*-------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    color: #666;
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-size: 62.5%;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-size: 2rem;
+    background-color: #fff;
+    color: #666;
+}
+
+.row {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*-------------------------------*/
+/* REUSABLE CONTENT */
+/*-------------------------------*/
+
+/* ----- Headings ----- */
+
+h1 {
+    color: #fff;
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2, h3 {
+    font-weight: 400;
+    color: #111;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 2px;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: #246C3D;
+}
+
+h3 {
+/*    color: #246C3D;*/
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* ----- Links ----- */
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn:link,
+.btn:visited{
+    font-size: 1.6rem;
+    padding: 1.2rem 3rem;
+    background-color: #850000;
+    color: #fff;
+    transition: background-color .3s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #ff0000;
+}
+
+.btn-green:link,
+.btn-green:visited {
+    background-color: #246C3D;
+    transition: background-color .3s;
+}
+
+.btn-green:hover,
+.btn-green:active {
+    background-color: #267742;
+}
+
+/* ----- Utility classes ----- */
+
+.u-margin-right-medium { margin-right: 4rem; }
+
+.u-margin-bottom-small { margin-bottom: 2rem; }
+
+.u-margin-bottom-medium { margin-bottom: 4rem;}
+
+.u-margin-top-small { margin-top: 2.5rem; }
+
+.u-margin-top-medium { margin-top: 4rem;}
+
+.u-margin-top-big { margin-top: 6rem; }
+
+.u-text-align-center { text-align: center; }
+
+.no-display {
+    display: none;
+}
+
+.long-text {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+/* ----- Animations -----*/
+
+/* Pulse */
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+.pulse:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: .8s;
+}
+
+/* Move Up */
+.move-up:link,
+.move-up:visited {
+    transform: translate(0);
+    transition: all .3s;
+}
+.move-up:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .4);
+}
+.move-up:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .4);
+}
+
+/* ------------------------------- */
+/* ------ Custom Scrollbar ------ */
+/* ----------------------------- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}

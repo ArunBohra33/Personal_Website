@@ -1,0 +1,247 @@
+@media only screen and (max-width: 1020px) {
+    html {
+        font-size: 66%;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    .logo {
+        width: 4rem;
+    }
+
+    .btn:link,
+    .btn:visited {
+        font-size: 1.8rem;
+        padding: .8rem 2rem;
+    }
+
+    .navbar {
+        left: 30%;
+        font-size: 1.8rem;
+    }
+
+    .skill-box {
+        width: 100%;
+    }
+
+    .button button {
+        width: 90%;
+        font-size: 1.6rem;
+    }
+
+    .img-container {
+        display: inline-block;
+        height: auto;
+    }
+
+    .work-section h3 {
+        margin: 0;
+    }
+
+    .contact-form input {
+        width: 100%;
+    }
+
+    .contact-form textarea {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .address-container {
+        padding-left: 4rem;
+    }
+
+    .address-container p {
+        display: block;
+        font-size: 1.3rem;
+        margin-top: .5rem;
+    }
+
+}
+
+@media only screen and (max-width: 770px) {
+    html {
+        font-size: 56%;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .long-text {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .logo {
+        width: 3.5rem;
+    }
+
+    .navbar {
+        left: 25%;
+    }
+
+    section {
+        padding: 4rem;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .hero-text-box {
+        top: 60%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .col {
+        margin: 1% 0 1% 0;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+        top: 5.5%;
+    }
+
+    .navbar {
+/*        display: none;*/
+        position: relative;
+        left: 75%;
+        top: 3.2rem;
+        color: #fff;
+    }
+
+    .sticky .navbar {
+        top: 1rem;
+    }
+    
+    .sticky .mobile-nav-icon {
+        top: 16%;
+    }
+
+    .mobile-nav-icon {
+        right: 3.4rem;
+    }
+
+    .navbar li {
+        display: block;
+    }
+
+    .navbar li a:link,
+    .navbar li a:visited {
+        font-size: 1.6rem;
+        padding-top: 0;
+        padding-bottom: .6rem;
+        border: none;
+        border: 0;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        border-bottom: 0;
+    }
+
+    .btn:link,
+    .btn:visited {
+        font-size: 1.6rem;
+        padding: .6rem 1.6rem;
+    }
+
+    .sticky .navbar li a:link,
+    .sticky .navbar li a:visited {
+        border: 0;
+    }
+
+    .hero-text-box {
+        top: 55%;
+    }
+
+    .about-text h3 {
+        margin-top: 2rem;
+    }
+
+    .profile-img {
+        text-align: left;
+    }
+
+    .skill-box {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .submit-btn-div {
+        text-align: center;
+    }
+
+    .address-container {
+        text-align: center;
+        padding-left: 0;
+        margin-top: 4rem;
+    }
+
+    .address-container p {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 502px) {
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn:link,
+    .btn:visited {
+        font-size: 1.2rem;
+        padding: .4rem 1.2rem;
+    }
+
+    .btn1 {
+        margin-right: .5rem;
+    }
+
+    .navbar {
+        left: 68%;
+    }
+
+    .button {
+        width: 30%;
+        text-align: center;
+    }
+
+    .button button {
+        width: 100%;
+        padding: .5rem 1.2rem;
+        font-size: 1.6rem;
+        letter-spacing: 0;
+    }
+    
+    .skill-box {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 372px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .navbar {
+        left: 48%;
+    }    
+}
